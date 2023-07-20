@@ -8,8 +8,11 @@
 
   <classes>
   
-  <class name = "Feature.Practice"/>
-  <class name = "Feature.YerunHoga"/>
+  <class name = "Feature.YerunHoga">
+ 
+  
+  </class>
+  
   </classes>
   
  

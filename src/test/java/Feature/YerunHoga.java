@@ -1,32 +1,33 @@
 package Feature;
-
+import bussinesLayer.loginrelatedMethodsandXpaths;
 import org.testng.annotations.Test;
 import java.io.FileNotFoundException;
 import java.io.IOException;
+
 import java.util.ArrayList;
-import java.util.Iterator;
+
 import java.util.List;
 import java.util.Set;
 import java.util.concurrent.TimeUnit;
 
-import org.json.simple.JSONObject;
+
 import org.json.simple.parser.ParseException;
 import org.openqa.selenium.By;
-import org.openqa.selenium.JavascriptExecutor;
+
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.chrome.ChromeOptions;
+
 import org.openqa.selenium.interactions.Actions;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.Select;
-import org.openqa.selenium.support.ui.WebDriverWait;
-import org.testng.annotations.AfterClass;
-import org.testng.annotations.AfterGroups;
-import org.testng.annotations.BeforeTest;
-import org.testng.annotations.Test;
-import bussinesLayer.loginrelatedMethodsandXpaths;
+
+
+
+import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeClass;
+
+
+
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class YerunHoga {
@@ -34,33 +35,20 @@ public class YerunHoga {
 WebDriver driver ;
 
 
-
-
-
-
-@BeforeTest(groups= {"smoke"})
+@BeforeClass
 public void Browsersetup()  {
 	
 
-	     WebDriverManager.chromedriver().setup();
+	       WebDriverManager.chromedriver().setup();
 	       driver = new ChromeDriver();
 	       driver.manage().deleteAllCookies();
 	       driver.manage().window().maximize();
-	       //driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
-	       System.out.println("beforetestmethod");
-	       JavascriptExecutor js = (JavascriptExecutor) driver;
-	       
-	       WebElement ty = driver.findElement(By.xpath("test"));
-	       
-	       Actions A = new Actions (driver);
-	       
-A.click(ty).build().perform();   
-
-	    
-
+	       driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+	       System.out.println("hello");
+  
 }
 
-@AfterClass
+@AfterTest
 public void quitbrowser() {
 	
 	driver.quit();
@@ -74,21 +62,21 @@ public void quitbrowser() {
 		a.readData();
 		a.Login();
 		a.clickOnaddTocart();
-		//a.quit();	
+
 	}
 	
-	@Test(groups= {"smoke"})
+	@Test
 	public void flipkarttestcase() throws InterruptedException {
 		
-		driver.get("https://www.google.co.in/");
+		driver.get("https://demo.seleniumeasy.com/basic-checkbox-demo.html");
 		//driver.findElement(By.xpath("/html/body/div[2]/div/div/button")).click();
 		
 		Thread.sleep(3000);
 		
-		WebElement elementName = driver.findElement(By.xpath("//*[@id=\"gb\"]/div/div[1]/div/div[1]/a"));
+		WebElement elementName = driver.findElement(By.xpath("/html/body/div[1]/div[2]/nav/div/div[1]/div/a"));
 		 elementName.sendKeys(Keys.COMMAND,Keys.ENTER);
 		 
-		 WebElement elementName1=driver.findElement(By.xpath("//*[@id=\"gb\"]/div/div[1]/div/div[2]/a"));
+		 WebElement elementName1=driver.findElement(By.xpath("//a[text()='Selenium Tutorials']"));
 		 elementName1.sendKeys(Keys.COMMAND,Keys.ENTER);
 		 
 
@@ -100,7 +88,7 @@ public void quitbrowser() {
 		 for(String y: wq) {
 			 String title=driver.switchTo().window(y).getTitle();
 			 //System.out.println(title);
-			 if(title.contains("Google Images")) {
+			 if(title.contains("500 Internal Server Error")) {
 				 
 				 driver.switchTo().window(y);
 				String r= driver.getTitle();
@@ -110,21 +98,42 @@ public void quitbrowser() {
 
 	}
 	
-	@Test(groups= {"smoke"})
+	@Test
 	public void print() {
-		//WebElement r=driver.findElement(By.xpath("//id[@tag='ndn']"));
-	
+//		WebElement r=driver.findElement(By.xpath("id[@tag='ndn']"));
+//	
 //		WebDriverWait t = new WebDriverWait(driver , 10);
 //		t.until(ExpectedConditions.visibilityOf(r));
 //		
 //		
-//		List <WebElement> a=driver.findElements(By.xpath("//id[@tag='ndn']"));
+//		List <WebElement> a=driver.findElements(By.xpath("id[@tag='ndn']"));
 		System.out.println("smoke");
 	}
 	
+	@Test
+	public void verifyTitle() {
+		String ExpectedTitle="Google";
+		
+		driver.get("https://www.google.com");
+		
+		String ActualTitle=driver.getTitle();
+		
+		if(ExpectedTitle.equals(ActualTitle)) {
+			
+			System.out.println("Title is matching");
+		}
+		
+	}
 	
-	@AfterGroups(groups= {"smoke"})
-	public void rt() {
+	@Test
+	public void dragAnddrop() {
+		
+		driver.get("https://www.globalsqa.com/demo-site/draganddrop/");
+		driver.switchTo().frame(driver.findElement(By.xpath("//iframe[@class='demo-frame lazyloaded']")));
+		WebElement src=driver.findElement(By.xpath("//img[@alt='The peaks of High Tatras']"));
+		WebElement dst=driver.findElement(By.xpath("//*[@id='trash']"));
+		Actions a = new Actions(driver);
+		a.dragAndDrop(src, dst).build().perform();
 		
 		
 		

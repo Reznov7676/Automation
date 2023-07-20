@@ -6,8 +6,8 @@
       <class name="Feature.YerunHoga">
         <methods>
           <include name="Browsersetup"/>
-          <include name="print"/>
           <include name="quitbrowser"/>
+          <include name="dragAnddrop"/>
         </methods>
       </class> <!-- Feature.YerunHoga -->
     </classes>

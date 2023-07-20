@@ -32,11 +32,11 @@ public class Practice{
 	
 
 	
-//	@AfterTest
-//	public void ew() {
-//		
-//		driver.quit();
-//	}
+	@AfterTest
+	public void ew() {
+		
+		driver.quit();
+	}
 
 	@Test
 	public void Browsersetup() throws IOException  {

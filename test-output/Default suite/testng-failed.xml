@@ -6,6 +6,9 @@
       <class name="Feature.YerunHoga">
         <methods>
           <include name="Browsersetup"/>
+          <include name="verifyTitle"/>
+          <include name="quitbrowser"/>
+          <include name="dragAnddrop"/>
           <include name="flipkarttestcase"/>
         </methods>
       </class> <!-- Feature.YerunHoga -->
