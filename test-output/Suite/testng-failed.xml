@@ -7,7 +7,7 @@
         <methods>
           <include name="Browsersetup"/>
           <include name="quitbrowser"/>
-          <include name="dragAnddrop"/>
+          <include name="swaglabs_titletest"/>
         </methods>
       </class> <!-- Feature.YerunHoga -->
     </classes>
