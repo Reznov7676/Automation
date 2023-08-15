@@ -10,11 +10,6 @@
   
   <class name = "Feature.YerunHoga">
   
-  <methods>
-  
-  <include  name = "seleniumeasy"/>
- 
-  </methods>
   </class>
   
   </classes>
