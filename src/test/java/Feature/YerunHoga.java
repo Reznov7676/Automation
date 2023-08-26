@@ -2,6 +2,7 @@ package Feature;
 import bussinesLayer.loginrelatedMethodsandXpaths;
 import org.testng.annotations.Test;
 import org.testng.asserts.Assertion;
+import org.testng.asserts.SoftAssert;
 
 import java.io.FileNotFoundException;
 import java.io.IOException;
@@ -14,6 +15,7 @@ import java.util.concurrent.TimeUnit;
 
 
 import org.json.simple.parser.ParseException;
+import org.junit.AfterClass;
 import org.openqa.selenium.By;
 
 import org.openqa.selenium.Keys;
@@ -22,13 +24,19 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.safari.SafariDriver;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
+import org.testng.annotations.AfterSuite;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeClass;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.BeforeSuite;
+import org.testng.annotations.BeforeTest;
 import org.testng.annotations.DataProvider;
+import org.testng.annotations.Parameters;
 
-import io.github.bonigarcia.wdm.WebDriverManager;
+//import io.github.bonigarcia.wdm.WebDriverManager;
 import junit.framework.Assert;
 
 public class YerunHoga {
@@ -36,36 +44,59 @@ public class YerunHoga {
 WebDriver driver ;
 
 
+SoftAssert softAssert = new SoftAssert();
+
+
+
 
 
 @BeforeClass
-public void Browsersetup()  {
+@Parameters("browser")
+public void Browsersetup(String browser)  {
 	
 
-	       WebDriverManager.chromedriver().setup();
-	       driver = new ChromeDriver();
-	       driver.manage().deleteAllCookies();
-	       driver.manage().window().maximize();
-	       driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
-	       System.out.println("hello");
-  
+    if(browser.equals("chrome")){
+     driver = new ChromeDriver();
+     driver.manage().deleteAllCookies();
+     driver.manage().window().maximize();
+     driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+     System.out.println("hello");
+}
+    
+    if(browser.equals("safari")){
+        driver = new SafariDriver();
+        driver.manage().deleteAllCookies();
+        driver.manage().window().maximize();
+        driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+        System.out.println("hello");
+   }
+
+
 }
 
-@DataProvider(name = "testData")
-public Object[][] provideTestData() {
-    return new Object[][] {
-        { "username1", "password1" },
-        { "username2", "password2" },
-        // Add more test data as needed
-    };
-}
+//@DataProvider(name = "testData")
+//public Object[][] provideTestData() {
+////    return new Object[][] {
+////        { "username1", "password1" ,"p1"},
+////        { "username2", "password2" ,"p1"},
+////        {"1" , "2","p1"},
+////        // Add more test data as needed
+////    };
+//	
+//	Object p[][]= {
+//			{"s","v"},
+//			{"v" , "v"}
+//	};
+//	
+//	return p;
+//}
 
-@Test(dataProvider = "testData")
-public void loginTest(String username, String password) {
-	
-	System.out.println(username);
-	System.out.println(password);
-}
+//@Test(dataProvider = "testData")
+//public void loginTest(String username, String password) {
+//	
+//	System.out.println(username + " "+password);
+//	//System.out.println(password);
+//}
 
 @AfterTest
 public void quitbrowser() {
@@ -136,7 +167,7 @@ public void quitbrowser() {
 	}
 	
 	@Test
-	public void print() {
+	//public void print() {
 //		WebElement r=driver.findElement(By.xpath("id[@tag='ndn']"));
 //	
 //		WebDriverWait t = new WebDriverWait(driver , 10);
@@ -144,10 +175,10 @@ public void quitbrowser() {
 //		
 //		
 //		List <WebElement> a=driver.findElements(By.xpath("id[@tag='ndn']"));
-		System.out.println("smoke");
-	}
+		//System.out.println("smoke");
+//	}
 	
-	@Test
+	
 	public void verifyTitle() {
 		String ExpectedTitle="Google";
 		
@@ -177,14 +208,14 @@ public void quitbrowser() {
 		
 	}
 	
-	@Test
-	public void swaglabs_titletest() {
+//	@Test
+//	public void swaglabs_titletest() {
 		
 		
-		driver.get("https://www.saucedemo.com/");
-		String Swag_title=driver.getTitle();
+		//driver.get("https://www.saucedemo.com/");
+		//String Swag_title=driver.getTitle();
 		//boolean a = Swag_title.equals("Swagg Labs");
-		Assert.assertEquals(Swag_title, "Swag Labs");
+		//Assert.assertEquals(Swag_title, "Swag Labs");
 //		System.out.println(Swag_title);
 //		
 //		if(a==true) {
@@ -192,7 +223,52 @@ public void quitbrowser() {
 //		}
 		
 		
-	}
+	//}
+	
+//	@Test
+//	public void swaglabs_titletest_softssert() {
+//		
+//		
+//		driver.get("https://www.saucedemo.com/");
+		//String Swag_title_1=driver.getTitle();
+		//boolean a = Swag_title.equals("Swagg Labs");
+		//Assert.assertEquals(Swag_title_1, "Swag Labss");
+//		System.out.println(Swag_title);
+//		
+//		if(a==true) {
+//			System.out.println(Swag_title.equals("Swag Labs"));
+//		}
+		
+		
+	//}
+	
+//	@Test
+//	public void jugad1() {
+//		
+//		String testing = "abc";
+//		
+//		//Assert.assertEquals(testing, "abcc");
+//		softAssert.assertEquals(testing, "abcc");
+//		
+//		
+//		
+//
+//	}
+//	@Test
+//	public void jugad2 () {
+//		
+//		String testing1 = "hjy";
+//		
+//		//Assert.assertEquals(testing, "abcc");
+//		softAssert.assertEquals(testing1, "hjyy");
+//		System.out.println("yed");
+//	}
+	
+//	@AfterMethod
+//	public void jugad3 () {
+//		
+//		softAssert.assertAll();
+//	}
 
 	@AfterMethod
 	public void takescreenshot(ITestResult result) {
@@ -202,8 +278,75 @@ public void quitbrowser() {
 		}
 	}
 	
+	
+	
+	
+		public void abchello() {
+		
+	    //   WebDriverManager.chromedriver().setup();
+	       driver = new ChromeDriver();
+
+	       driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+	       System.out.println("hello");
+		System.out.println("start");
 		
 	}
+	
+	@BeforeSuite
+	public void abc1() {
+		System.out.println("BeforeSuite");
+		
+	}
+	@BeforeClass
+	public void abc2() {
+		System.out.println("BeforeClass");
+		
+	}
+	
+	@BeforeTest
+	public void abc3() {
+		
+		System.out.println("BeforeTest");
+	}
+	
+	@BeforeMethod
+	public void abc4() {
+		System.out.println("BeforeMethod");
+		
+	}
+	
+	@AfterSuite
+	public void abc5() {
+		System.out.println("@AfterSuite");
+		
+	}
+	
+	@AfterClass
+	public void abc6() {
+		System.out.println("@AfterClass");
+		
+	}
+	
+	@AfterTest
+	public void abc7() {
+		
+		System.out.println("@AfterTest");
+	}
+	
+	@Test
+	public void abc8() {
+		
+		
+		String a = "jhsbdj";
+		String b= a.replaceAll("[^hsb]", "");
+		System.out.println(b);
+	}
+	
+	
+		
+	}
+
+
 
 	
 	

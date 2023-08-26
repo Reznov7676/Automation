@@ -1,180 +1,162 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="9" passed="9">
+<testng-results ignored="0" total="6" passed="6" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="28379" started-at="2023-08-15T22:09:12 IST" finished-at="2023-08-15T22:09:41 IST">
+  <suite started-at="2023-08-26T21:15:07 IST" name="Suite" finished-at="2023-08-26T21:15:28 IST" duration-ms="20217">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="28379" started-at="2023-08-15T22:09:12 IST" finished-at="2023-08-15T22:09:41 IST">
+    <test started-at="2023-08-26T21:15:07 IST" name="Test" finished-at="2023-08-26T21:15:28 IST" duration-ms="20217">
       <class name="Feature.YerunHoga">
-        <test-method status="PASS" signature="Browsersetup()[pri:0, instance:Feature.YerunHoga@1b26f7b2]" name="Browsersetup" is-config="true" duration-ms="6546" started-at="2023-08-15T22:09:12 IST" finished-at="2023-08-15T22:09:19 IST">
+        <test-method is-config="true" signature="abc1()[pri:0, instance:Feature.YerunHoga@c88a337]" started-at="2023-08-26T21:15:07 IST" name="abc1" finished-at="2023-08-26T21:15:07 IST" duration-ms="10" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- abc1 -->
+        <test-method is-config="true" signature="abc3()[pri:0, instance:Feature.YerunHoga@c88a337]" started-at="2023-08-26T21:15:07 IST" name="abc3" finished-at="2023-08-26T21:15:07 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- abc3 -->
+        <test-method is-config="true" signature="Browsersetup(java.lang.String)[pri:0, instance:Feature.YerunHoga@c88a337]" started-at="2023-08-26T21:15:07 IST" name="Browsersetup" finished-at="2023-08-26T21:15:10 IST" duration-ms="2235" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[safari]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Browsersetup -->
-        <test-method status="PASS" signature="LoginTestCase()[pri:0, instance:Feature.YerunHoga@1b26f7b2]" name="LoginTestCase" duration-ms="4439" started-at="2023-08-15T22:09:19 IST" finished-at="2023-08-15T22:09:23 IST">
+        <test-method is-config="true" signature="abc2()[pri:0, instance:Feature.YerunHoga@c88a337]" started-at="2023-08-26T21:15:10 IST" name="abc2" finished-at="2023-08-26T21:15:10 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- abc2 -->
+        <test-method signature="LoginTestCase()[pri:0, instance:Feature.YerunHoga@c88a337]" started-at="2023-08-26T21:15:10 IST" name="LoginTestCase" finished-at="2023-08-26T21:15:14 IST" duration-ms="4686" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LoginTestCase -->
-        <test-method status="PASS" signature="takescreenshot(org.testng.ITestResult)[pri:0, instance:Feature.YerunHoga@1b26f7b2]" name="takescreenshot" is-config="true" duration-ms="1" started-at="2023-08-15T22:09:23 IST" finished-at="2023-08-15T22:09:23 IST">
+        <test-method is-config="true" signature="abc4()[pri:0, instance:Feature.YerunHoga@c88a337]" started-at="2023-08-26T21:15:10 IST" name="abc4" finished-at="2023-08-26T21:15:10 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- abc4 -->
+        <test-method is-config="true" signature="takescreenshot(org.testng.ITestResult)[pri:0, instance:Feature.YerunHoga@c88a337]" started-at="2023-08-26T21:15:14 IST" name="takescreenshot" finished-at="2023-08-26T21:15:14 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=LoginTestCase status=SUCCESS method=YerunHoga.LoginTestCase()[pri:0, instance:Feature.YerunHoga@1b26f7b2] output={null}]]]>
+                <![CDATA[[TestResult name=LoginTestCase status=SUCCESS method=YerunHoga.LoginTestCase()[pri:0, instance:Feature.YerunHoga@c88a337] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- takescreenshot -->
-        <test-method status="PASS" signature="dragAnddrop()[pri:0, instance:Feature.YerunHoga@1b26f7b2]" name="dragAnddrop" duration-ms="5312" started-at="2023-08-15T22:09:23 IST" finished-at="2023-08-15T22:09:29 IST">
+        <test-method signature="abc8()[pri:0, instance:Feature.YerunHoga@c88a337]" started-at="2023-08-26T21:15:14 IST" name="abc8" finished-at="2023-08-26T21:15:14 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- abc8 -->
+        <test-method is-config="true" signature="abc4()[pri:0, instance:Feature.YerunHoga@c88a337]" started-at="2023-08-26T21:15:14 IST" name="abc4" finished-at="2023-08-26T21:15:14 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- abc4 -->
+        <test-method is-config="true" signature="takescreenshot(org.testng.ITestResult)[pri:0, instance:Feature.YerunHoga@c88a337]" started-at="2023-08-26T21:15:14 IST" name="takescreenshot" finished-at="2023-08-26T21:15:14 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=abc8 status=SUCCESS method=YerunHoga.abc8()[pri:0, instance:Feature.YerunHoga@c88a337] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- takescreenshot -->
+        <test-method is-config="true" signature="abc4()[pri:0, instance:Feature.YerunHoga@c88a337]" started-at="2023-08-26T21:15:14 IST" name="abc4" finished-at="2023-08-26T21:15:14 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- abc4 -->
+        <test-method signature="dragAnddrop()[pri:0, instance:Feature.YerunHoga@c88a337]" started-at="2023-08-26T21:15:14 IST" name="dragAnddrop" finished-at="2023-08-26T21:15:22 IST" duration-ms="8092" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- dragAnddrop -->
-        <test-method status="PASS" signature="takescreenshot(org.testng.ITestResult)[pri:0, instance:Feature.YerunHoga@1b26f7b2]" name="takescreenshot" is-config="true" duration-ms="1" started-at="2023-08-15T22:09:29 IST" finished-at="2023-08-15T22:09:29 IST">
+        <test-method is-config="true" signature="takescreenshot(org.testng.ITestResult)[pri:0, instance:Feature.YerunHoga@c88a337]" started-at="2023-08-26T21:15:22 IST" name="takescreenshot" finished-at="2023-08-26T21:15:22 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=dragAnddrop status=SUCCESS method=YerunHoga.dragAnddrop()[pri:0, instance:Feature.YerunHoga@1b26f7b2] output={null}]]]>
+                <![CDATA[[TestResult name=dragAnddrop status=SUCCESS method=YerunHoga.dragAnddrop()[pri:0, instance:Feature.YerunHoga@c88a337] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- takescreenshot -->
-        <test-method status="PASS" signature="loginTest(java.lang.String, java.lang.String)[pri:0, instance:Feature.YerunHoga@1b26f7b2]" name="loginTest" duration-ms="2" started-at="2023-08-15T22:09:29 IST" data-provider="testData" finished-at="2023-08-15T22:09:29 IST">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[username1]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[password1]]>
-              </value>
-            </param>
-          </params>
+        <test-method is-config="true" signature="abc4()[pri:0, instance:Feature.YerunHoga@c88a337]" started-at="2023-08-26T21:15:22 IST" name="abc4" finished-at="2023-08-26T21:15:22 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- loginTest -->
-        <test-method status="PASS" signature="takescreenshot(org.testng.ITestResult)[pri:0, instance:Feature.YerunHoga@1b26f7b2]" name="takescreenshot" is-config="true" duration-ms="0" started-at="2023-08-15T22:09:29 IST" finished-at="2023-08-15T22:09:29 IST">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=loginTest status=SUCCESS method=YerunHoga.loginTest(java.lang.String, java.lang.String)[pri:0, instance:Feature.YerunHoga@1b26f7b2] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- takescreenshot -->
-        <test-method status="PASS" signature="loginTest(java.lang.String, java.lang.String)[pri:0, instance:Feature.YerunHoga@1b26f7b2]" name="loginTest" duration-ms="1" started-at="2023-08-15T22:09:29 IST" data-provider="testData" finished-at="2023-08-15T22:09:29 IST">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[username2]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[password2]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginTest -->
-        <test-method status="PASS" signature="takescreenshot(org.testng.ITestResult)[pri:0, instance:Feature.YerunHoga@1b26f7b2]" name="takescreenshot" is-config="true" duration-ms="0" started-at="2023-08-15T22:09:29 IST" finished-at="2023-08-15T22:09:29 IST">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=loginTest status=SUCCESS method=YerunHoga.loginTest(java.lang.String, java.lang.String)[pri:0, instance:Feature.YerunHoga@1b26f7b2] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- takescreenshot -->
-        <test-method status="PASS" signature="print()[pri:0, instance:Feature.YerunHoga@1b26f7b2]" name="print" duration-ms="2" started-at="2023-08-15T22:09:29 IST" finished-at="2023-08-15T22:09:29 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- print -->
-        <test-method status="PASS" signature="takescreenshot(org.testng.ITestResult)[pri:0, instance:Feature.YerunHoga@1b26f7b2]" name="takescreenshot" is-config="true" duration-ms="1" started-at="2023-08-15T22:09:29 IST" finished-at="2023-08-15T22:09:29 IST">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=print status=SUCCESS method=YerunHoga.print()[pri:0, instance:Feature.YerunHoga@1b26f7b2] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- takescreenshot -->
-        <test-method status="PASS" signature="seleniumeasy()[pri:0, instance:Feature.YerunHoga@1b26f7b2]" name="seleniumeasy" duration-ms="4127" started-at="2023-08-15T22:09:29 IST" finished-at="2023-08-15T22:09:33 IST">
+        </test-method> <!-- abc4 -->
+        <test-method signature="seleniumeasy()[pri:0, instance:Feature.YerunHoga@c88a337]" started-at="2023-08-26T21:15:22 IST" name="seleniumeasy" finished-at="2023-08-26T21:15:26 IST" duration-ms="3867" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- seleniumeasy -->
-        <test-method status="PASS" signature="takescreenshot(org.testng.ITestResult)[pri:0, instance:Feature.YerunHoga@1b26f7b2]" name="takescreenshot" is-config="true" duration-ms="1" started-at="2023-08-15T22:09:33 IST" finished-at="2023-08-15T22:09:33 IST">
+        <test-method is-config="true" signature="takescreenshot(org.testng.ITestResult)[pri:0, instance:Feature.YerunHoga@c88a337]" started-at="2023-08-26T21:15:26 IST" name="takescreenshot" finished-at="2023-08-26T21:15:26 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=seleniumeasy status=SUCCESS method=YerunHoga.seleniumeasy()[pri:0, instance:Feature.YerunHoga@1b26f7b2] output={null}]]]>
+                <![CDATA[[TestResult name=seleniumeasy status=SUCCESS method=YerunHoga.seleniumeasy()[pri:0, instance:Feature.YerunHoga@c88a337] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- takescreenshot -->
-        <test-method status="PASS" signature="seleniumeasymultipleTabs()[pri:0, instance:Feature.YerunHoga@1b26f7b2]" name="seleniumeasymultipleTabs" duration-ms="4557" started-at="2023-08-15T22:09:33 IST" finished-at="2023-08-15T22:09:37 IST">
+        <test-method is-config="true" signature="abc4()[pri:0, instance:Feature.YerunHoga@c88a337]" started-at="2023-08-26T21:15:26 IST" name="abc4" finished-at="2023-08-26T21:15:26 IST" duration-ms="4" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- abc4 -->
+        <test-method signature="seleniumeasymultipleTabs()[pri:0, instance:Feature.YerunHoga@c88a337]" started-at="2023-08-26T21:15:26 IST" name="seleniumeasymultipleTabs" finished-at="2023-08-26T21:15:27 IST" duration-ms="353" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- seleniumeasymultipleTabs -->
-        <test-method status="PASS" signature="takescreenshot(org.testng.ITestResult)[pri:0, instance:Feature.YerunHoga@1b26f7b2]" name="takescreenshot" is-config="true" duration-ms="0" started-at="2023-08-15T22:09:37 IST" finished-at="2023-08-15T22:09:37 IST">
+        <test-method is-config="true" signature="takescreenshot(org.testng.ITestResult)[pri:0, instance:Feature.YerunHoga@c88a337]" started-at="2023-08-26T21:15:27 IST" name="takescreenshot" finished-at="2023-08-26T21:15:27 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=seleniumeasymultipleTabs status=SUCCESS method=YerunHoga.seleniumeasymultipleTabs()[pri:0, instance:Feature.YerunHoga@1b26f7b2] output={null}]]]>
+                <![CDATA[[TestResult name=seleniumeasymultipleTabs status=SUCCESS method=YerunHoga.seleniumeasymultipleTabs()[pri:0, instance:Feature.YerunHoga@c88a337] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- takescreenshot -->
-        <test-method status="PASS" signature="swaglabs_titletest()[pri:0, instance:Feature.YerunHoga@1b26f7b2]" name="swaglabs_titletest" duration-ms="207" started-at="2023-08-15T22:09:37 IST" finished-at="2023-08-15T22:09:38 IST">
+        <test-method is-config="true" signature="abc4()[pri:0, instance:Feature.YerunHoga@c88a337]" started-at="2023-08-26T21:15:27 IST" name="abc4" finished-at="2023-08-26T21:15:27 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- swaglabs_titletest -->
-        <test-method status="PASS" signature="takescreenshot(org.testng.ITestResult)[pri:0, instance:Feature.YerunHoga@1b26f7b2]" name="takescreenshot" is-config="true" duration-ms="0" started-at="2023-08-15T22:09:38 IST" finished-at="2023-08-15T22:09:38 IST">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=swaglabs_titletest status=SUCCESS method=YerunHoga.swaglabs_titletest()[pri:0, instance:Feature.YerunHoga@1b26f7b2] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- takescreenshot -->
-        <test-method status="PASS" signature="verifyTitle()[pri:0, instance:Feature.YerunHoga@1b26f7b2]" name="verifyTitle" duration-ms="2843" started-at="2023-08-15T22:09:38 IST" finished-at="2023-08-15T22:09:40 IST">
+        </test-method> <!-- abc4 -->
+        <test-method signature="verifyTitle()[pri:0, instance:Feature.YerunHoga@c88a337]" started-at="2023-08-26T21:15:27 IST" name="verifyTitle" finished-at="2023-08-26T21:15:27 IST" duration-ms="637" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyTitle -->
-        <test-method status="PASS" signature="takescreenshot(org.testng.ITestResult)[pri:0, instance:Feature.YerunHoga@1b26f7b2]" name="takescreenshot" is-config="true" duration-ms="1" started-at="2023-08-15T22:09:40 IST" finished-at="2023-08-15T22:09:40 IST">
+        <test-method is-config="true" signature="takescreenshot(org.testng.ITestResult)[pri:0, instance:Feature.YerunHoga@c88a337]" started-at="2023-08-26T21:15:27 IST" name="takescreenshot" finished-at="2023-08-26T21:15:27 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=verifyTitle status=SUCCESS method=YerunHoga.verifyTitle()[pri:0, instance:Feature.YerunHoga@1b26f7b2] output={null}]]]>
+                <![CDATA[[TestResult name=verifyTitle status=SUCCESS method=YerunHoga.verifyTitle()[pri:0, instance:Feature.YerunHoga@c88a337] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- takescreenshot -->
-        <test-method status="PASS" signature="quitbrowser()[pri:0, instance:Feature.YerunHoga@1b26f7b2]" name="quitbrowser" is-config="true" duration-ms="264" started-at="2023-08-15T22:09:40 IST" finished-at="2023-08-15T22:09:41 IST">
+        <test-method is-config="true" signature="abc7()[pri:0, instance:Feature.YerunHoga@c88a337]" started-at="2023-08-26T21:15:27 IST" name="abc7" finished-at="2023-08-26T21:15:27 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- abc7 -->
+        <test-method is-config="true" signature="quitbrowser()[pri:0, instance:Feature.YerunHoga@c88a337]" started-at="2023-08-26T21:15:27 IST" name="quitbrowser" finished-at="2023-08-26T21:15:28 IST" duration-ms="299" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quitbrowser -->
+        <test-method is-config="true" signature="abc5()[pri:0, instance:Feature.YerunHoga@c88a337]" started-at="2023-08-26T21:15:28 IST" name="abc5" finished-at="2023-08-26T21:15:28 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- abc5 -->
       </class> <!-- Feature.YerunHoga -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>

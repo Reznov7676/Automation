@@ -1,14 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
       <class name="Feature.YerunHoga">
         <methods>
+          <include name="LoginTestCase"/>
           <include name="Browsersetup"/>
           <include name="takescreenshot"/>
+          <include name="quitbrowser"/>
+          <include name="seleniumeasy"/>
+          <include name="abc1"/>
+          <include name="verifyTitle"/>
+          <include name="abc7"/>
+          <include name="abc8"/>
+          <include name="abc5"/>
           <include name="dragAnddrop"/>
-          <include name="swaglabs_titletest"/>
+          <include name="abc3"/>
+          <include name="abc4"/>
+          <include name="seleniumeasymultipleTabs"/>
+          <include name="abc2"/>
         </methods>
       </class> <!-- Feature.YerunHoga -->
     </classes>
